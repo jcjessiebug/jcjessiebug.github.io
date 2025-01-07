@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Showcase</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top" id="navbar">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/index.html">JING CHEN</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto px-3">
+        <li class="nav-item px-3">
+          <a class="nav-link text-muted" href="/index.html">HOME</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link text-muted" href="#skills">RESUME</a>
+        </li>
+        <li class="nav-item px-3">
+          <a class="nav-link text-muted" href="#contact">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<body>
+  <div class="container mt-5 pt-5 mb-5 pb-5">
+    <!-- Left Section: Text Area -->
+    <div class="text-section text-muted">
+      <h1 class="project-title ">Nashville Housing Analysis</h1>
+      <hr class="my-4" />
+      <h3><strong>Overview</strong></h3>
+      <p class="project-description">
+        This project focuses on analyzing real estate data from Nashville to identify undervalued properties and assist
+        stakeholders in making data-driven investment decisions. By leveraging machine learning models and exploring key
+        variables such as sale price and building value, the project highlights actionable insights for strategic
+        portfolio optimization.
+      </p>
+
+      <hr class="my-4" />
+      <h3><strong>Dataset</strong></h3>
+      <p class="project-description">
+        The dataset includes over 22,000 property records from Nashville, encompassing 27 variables. Key variables
+        include:
+      </p>
+      <p class="project-description"><strong>- Sale Price:</strong> The actual transaction price of the property.
+      </p>
+      <p class="project-description"><strong>- Building Value:</strong> The assessed value of the building.</p>
+      <p class="project-description"><strong>- Land Value: </strong>The assessed value of the land.</p>
+      <p class="project-description"><strong>- Finished Area: </strong>The total finished area in square feet.</p>
+      <p class="project-description"><strong>- Property Type: </strong>The type of property (e.g., residential,
+        commercial).</p>
+
+      <p class="project-description">
+        The dataset also categorized properties into three classes based on their valuation:
+      </p>
+      <p class="project-description"><strong>- Undervalued: </strong> Sale price is significantly lower than the
+        combined building and land values.</p>
+      <p class="project-description"><strong>- Overvalued: </strong>Sale price is significantly higher than the assessed
+        value</p>
+      <hr class="my-4" />
+      <h3><strong>Methodology</strong></h3>
+
+      <p class="project-description"><strong>- Data Cleaning and Preparation:</strong>
+        <br>
+        <span style="display: inline-block; width: 30px;"></span>Addressed missing values through imputation techniques.
+        <br>
+        <span style="display: inline-block; width: 30px;"></span>Encoded categorical variables for model compatibility.
+        <br>
+        <span style="display: inline-block; width: 30px;"></span>Handled outliers using the interquartile range (IQR)
+        method.
+      </p>
+      <p class="project-description"><strong>- Exploratory Data Analysis:</strong>
+        <br>
+        <span style="display: inline-block; width: 30px;"></span>Analyzed variable correlations and identified key
+        predictors using a correlation heatmap.
+        <br>
+        <span style="display: inline-block; width: 30px;"></span>Studied data distributions through histograms and
+        boxplots.
+
+      </p>
+      <p class="project-description"><strong>- Model Implementation:</strong>
+        <br>
+        <span style="display: inline-block; width: 30px;"></span>Developed Decision Tree, Random Forest, and XGBoost
+        models.
+        <br>
+        <span style="display: inline-block; width: 30px;"></span>Applied cross-validation to evaluate model performance
+        and ensure generalizability.
+      </p>
+
+      <p class="project-description"><strong>- Evaluation Metrics:</strong>
+        <br>
+        <span style="display: inline-block; width: 30px;"></span>Accuracy, precision, recall, and feature importance
+        were used to compare models.
+
+      </p>
+      <hr class="my-4" />
+      <h3><strong>Key Findings</strong> </h3>
+      <p class="project-description"><strong>- Model Performance: </strong>
+        <br>
+        <span style="display: inline-block; width: 30px;"></span><strong>XGBoost: </strong> Achieved the highest
+        accuracy at <strong>98.9%</strong>, demonstrating robust prediction capabilities.
+        <br>
+        <span style="display: inline-block; width: 30px;"></span><strong>Random Forest: </strong>Performed well with an
+        accuracy of <strong>94.5%</strong>
+        <br>
+        <span style="display: inline-block; width: 30px;"></span><strong>Decision Tree: </strong>Achieved an accuracy of
+        <strong>88.6%</strong>, suitable for simpler scenarios.
+
+      </p>
+      <p class="project-description"><strong>- Top Predictors: </strong>
+        <br>
+        <span style="display: inline-block; width: 30px;"></span><strong>Land Value: </strong> Strongly correlated with
+        undervalued properties.
+        <br>
+        <span style="display: inline-block; width: 30px;"></span><strong>Building Value: </strong> Highly indicative of property pricing.
+        <br>
+        <span style="display: inline-block; width: 30px;"></span><strong>Finished Area:</strong>Larger areas tend to be undervalued.
+
+
+      </p>
+      <p class="project-description"><strong>- Insights:</strong>
+        <br>
+        <span style="display: inline-block; width: 30px;"></span>Properties with high land and building values but low sale prices are prime candidates for investment.
+        <br>
+        <span style="display: inline-block; width: 30px;"></span>The model provides a reliable tool for distinguishing between overvalued and undervalued properties, reducing investment risks.
+
+      </p>
+
+      <img src="images/projects/pj2img1.jpg" alt="Real Estate Project" class="project-image">
+
+
+      <!-- Buttons -->
+      <div class="button-group d-flex justify-content-center">
+
+        <a href="https://github.com/jcjessiebug/Nashville_Housing_Analysis" class="btn text-white btn-bg mx-auto">Full
+          Code Tour</a>
+      </div>
+
+    </div>
+
+  </div>
+  <section class="contact-section py-5 bg-custom" id="contact">
+    <div class="container">
+      <!-- Section Heading -->
+      <div class="text-center mb-5">
+        <h2 class="fw-bold text-white">Contact Me</h2>
+        <p class="text-muted">
+          Let's chat! Your data, my brain - together we can be unstoppable.
+        </p>
+        <hr class="my-4 w-50 mx-auto" />
+      </div>
+
+      <!-- Contact Information -->
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <ul class="list-unstyled">
+            <!-- Location -->
+            <li class="d-flex align-items-center mb-3">
+              <div class="icon-container me-3">
+                <i class="fas fa-home text-white" style="font-size: 1.5rem;"></i>
+              </div>
+              <span class="text-muted">Seattle WA</span>
+            </li>
+
+            <!-- Email -->
+            <li class="d-flex align-items-center mb-3">
+              <div class="icon-container me-3">
+                <i class="fas fa-envelope text-white" style="font-size: 1.5rem;"></i>
+              </div>
+              <span><a href="mailto:jingchenjessie@gmail.com" class="text-muted"
+                  target="_blank">jingchenjessie@gmail.com</a></span>
+            </li>
+
+            <!-- GitHub -->
+            <li class="d-flex align-items-center mb-3">
+              <div class="icon-container me-3">
+                <i class="fab fa-github text-white" style="font-size: 1.5rem;"></i>
+              </div>
+              <span><a href="https://github.com/jcjessiebug" target="_blank"
+                  class="text-muted">github.com/jcjessiebug</a></span>
+            </li>
+
+            <!-- LinkedIn -->
+            <li class="d-flex align-items-center mb-3">
+              <div class="icon-container me-3">
+                <i class="fab fa-linkedin text-white" style="font-size: 1.5rem;"></i>
+              </div>
+              <span><a href="https://linkedin.com/in/jingchenjessie" target="_blank"
+                  class="text-muted">linkedin.com/in/jingchenjessie</a></span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Bootstrap JS -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.9.5/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+  <script src="scripts.js"></script>
+</body>
+
+</html>
